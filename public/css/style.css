@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Inter', sans-serif;
+}
+/* nav-bar*/
+header {
+    background-color: #24252a;
+    box-shadow: 0px 3px 10px #464646;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.80rem 6rem;
+}
+
+.logo img {
+    width: 60px;
+    height: 60;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    font-family: "VT323", serif;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.login-button button {
+    border: none;
+    margin-top: 15px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #01a746;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .login-button {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+
+    .open {
+        display: block;
+    }
+}
+/*home-page*/
+.home-banner {
+    position: relative;
+    width: 100%;
+    height: calc(95.5vh - 60px);
+    overflow: hidden;
+}
+
+.back-gound-home{
+    width: 100%;
+    height: calc(95.5vh - 60px);
+    object-fit: cover;
+    display: block;
+}
+
+.texto-sobreposto {
+    font-family: "VT323", serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.texto-sobreposto h1{
+    font-size: 3.5em;
+}
+
+.texto-sobreposto p{
+    font-size: 2em;
+}
+
+/*atualizações-page*/
+.novidades{
+    text-align: center;
+}
+
+.novidades h1{
+    font-family: "VT323", serif;
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-top: 15px;
+}
+.novidades h2{
+    line-height: 25px;    
+    letter-spacing: -1.5px;
+    font-family: "VT323", serif;
+    font-size: 2rem;
+    font-weight: 550;
+    margin-top: 10px;
+}
+.ilustracao{
+    width: 700px;
+    height: 400px;
+    margin-top: 5px;
+    border-radius: 15px;
+}
+
+/*temporada-page*/
+.infos{
+    text-align: center;
+}
+.infos h1{
+    font-family: "VT323", serif;
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.infos h2{
+    line-height: 25px;    
+    letter-spacing: -1.5px;
+    font-family: "VT323", serif;
+    font-size: 2rem;
+    font-weight: 550;
+    margin-top: 10px;
+}
+
+.temporada{
+    width: 700px;
+    height: 400px;
+    margin-top: 5px;
+    border-radius: 15px;
+}
+
+/*login-page*/
+.tamanho-login {
+    display: flex;
+    height: calc(90.5vh - 60px);
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 400px;
+    border-radius: 15%;
+    background-color: #24252a;
+    box-shadow: 0px 3px 10px #464646;
+    padding: 20px;
+}
+
+.container h1 {
+    padding-top: 30px;
+    font-family: "VT323", serif;
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 550;
+    margin-bottom: 20px;
+}
+
+.container h2 {
+    padding-top: 5px;
+    font-family: "VT323", serif;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 550;
+    margin-bottom: 20px;
+}
+.container .user,
+.container .senha {
+    font-family: "VT323", serif;
+    color: #fff;
+    font-size: 1.5rem;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.container input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+}
+
+.container button.button {
+    font-family: "VT323", serif;
+    width: 120px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #01a746;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container p{
+    font-family: "VT323", serif;
+    padding-top: 10px;
+    font-size: 1.5rem;
+}
+
+/*perfil-page*/
+.perfil-container {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: calc(90.5vh - 60px);
+    padding: 10px;
+}
+
+.card-perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    min-height: 70vh;
+    padding: 15px;
+    background-color: #24252a;
+    border-radius: 30px;
+}
+.texto-estatisticas {
+    font-family: "VT323", serif;;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+#graficoEstatisticas{
+    width: 550px;
+    height: 50px; 
+}
+.grafico-container {
+    flex-shrink: 0;
+    width: 550px;
+    height: 500px;
+}
